@@ -10,7 +10,7 @@
     display: flex;
 }
 .text-gray{
-    color: #424242;
+    color: #727272;
 }
 .navbar{
     justify-content: space-between;
@@ -96,7 +96,21 @@ main{
 }
 
 @media screen and (max-width: 576px) {
-    .navbar .nav-link{
+    .navbar, .nav-link, .teams{
         flex-direction: column;
+    }
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
     }
 }
